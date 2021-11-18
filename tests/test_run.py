@@ -32,6 +32,7 @@ class TestFull:
                                 os.path.dirname(f.name), query_spec["data"]["url"]
                             )
                         )
+                        print(query_spec["data"]["url"])
                     elif "values" in query_spec["data"]:
                         data = read_data_to_asp(query_spec["data"]["values"])
                     else:
