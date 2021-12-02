@@ -103,7 +103,6 @@ def run_clingo(
         args=cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE
     )
 
-    print(draco_query)
     program = "\n".join(draco_query)
     file_names = [os.path.join(DRACO_LP_DIR, f) for f in files]
     asp_program = b"\n".join(map(load_file, file_names)) + program.encode("utf8")

@@ -48,7 +48,6 @@ def read_data_to_asp(file: str) -> List[str]:
             return schema2asp(data2schema(data))
     elif file.endswith(".csv"):
         df = pd.read_csv(file)
-        # df = df.where((pd.notnull(df)), None)
         df = df.replace({np.nan: None})
 
         data = list(df.T.to_dict().values())

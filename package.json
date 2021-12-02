@@ -7,6 +7,5 @@
   "scripts": {
     "vl2png": "vl2png",
     "build": "yarn --cwd ./js build"
-  },
-  "devDependencies": {}
+  }
 }
